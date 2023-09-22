@@ -128,37 +128,39 @@ const getList = async () => {
     }
 
     /* validações da data */
-    var data_valida = true
+
+    insert_data = true
 
     try {
       const regex = /\d{2}\/\d{2}\/\d{4}/g
       if(RegExp(regex).test(data_registro)){
         var partes_data = data_registro.split("/").map(item => parseInt(item))
+                
+        data_aux = new Date(partes_data[2], partes_data[1], partes_data[0] )
+        data_comp = [data_aux.getDate().toString().padStart(2, '0'), data_aux.getMonth().toString().padStart(2, '0'), data_aux.getFullYear()].join('/')
+
+        if (data_registro !== data_comp)
+          throw "Data inválida!"
+
+        if (data_aux > new Date())
+          throw "Data inválida, pois está no futuro!"
+
       }
+      else
+        throw "Data em formato inválido! Formato esperado: dd/mm/yyyy" 
       
     }catch(e){
-      console.log("Data Inválida")
+      insert_data = false
+      alert(e)
     }
+    
 
 
-    /*
-    if (inputProduct === '') {
-      alert("Escreva o nome de um item!");
-    } else if (isNaN(inputQuantity) || isNaN(inputPrice)) {
-      alert("Quantidade e valor precisam ser números!");
-    } else {
-      insertList(inputProduct, inputQuantity, inputPrice)
-      postItem(inputProduct, inputQuantity, inputPrice)
+    if (insert_data){
+      postItem(titulo, descricao, "imagem", data_registro)
+      insertList(titulo, descricao, data_registro)
       alert("Item adicionado!")
     }
-    */
-   
-    /*
-    insertList(titulo, descricao, data_registro)
-    a = postItem(titulo, descricao, "imagem", data_registro)
-    console.log(a)
-    alert("Item adicionado!")
-    */
   }
   
   /*
