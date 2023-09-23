@@ -80,11 +80,9 @@ const getList = async () => {
         let id = div.id.split("-").slice(-1).toString(); 
         row_detalhe = document.getElementById("row-experiencia-detalhe-".concat(id)) 
         row_detalhe.remove()
-        console.log(id)
+
         const titulo = div.getElementsByTagName('td')[0].innerHTML
         const data_registro = div.getElementsByTagName('td')[1].innerHTML
-
-        console.log(div.id)
 
         if (confirm("Você tem certeza?")) {
           div.remove()
@@ -256,7 +254,6 @@ const getList = async () => {
 
   function toggleVisibility(id) {
     var x = document.getElementById(id);
-    console.log(x.style.display)
     if (x.style.display === "none" || x.style.display === "") {
       x.style.display = "block";
     } else {

@@ -16,10 +16,12 @@
         <div class="title">
             <h2>Diário de Viagem</h2>
         </div>
+        <!--
         <div class="banner">
             <img src="img/banner.jpeg"
                 alt="y">
         </div>
+        -->
     </header>
 
 
@@ -40,69 +42,30 @@
 
             <label class="labelNewRegistro" for="newDescricao">Descrição:</label>
             <textarea id="newDescricao" name="newDescricao" rows="8" cols="80" maxlength="1500" placeholder="Escreva aqui sobre sua experiência"></textarea><br><br>
-
-            <span onclick="newItem()" class="addBtn">Incluir</span><br><br>
+            
+                <span onclick="newItem()" class="addBtn">Incluir</span>
             
         </div>
 
-    </section>
+    </section><br><br>
     
     <div id="expand_collapse">
         <img src="img/expand.png" id="img_expand_collapse" width="3%" height="3%" >
-    </div><br><br><br><br>
+    </div><br><br>
 
 
-    <table id="tabela-experiencias">
-        
-        <tr class="firstrow-experiencia">
-          <th>Título da Experiência</th>
-          <th>Data da Experiência</th>
-        </tr>
-        <!--
-        <tr class="row-experiencia" id="row-experiencia-1" onclick="toggleRowVisibility('row-experiencia-detalhe-1')">
-          <td class="td">Passeio em Cancun</td>
-          <td>20/03/1997</td>
-        </tr>
-        
-        <tr class="row-experiencia-detalhe" id="row-experiencia-detalhe-1">
-            <td colspan="2">Exemplo asfsadfkof ifjafioa fuiahfuiahnfuiajfh fhufhua hfnau fhnahbsdsadsa sadlknsadjias njasndf</td>
-        <tr>
-          <td class="td">10002</td>
-          <td>Sally</td>
-        </tr>
-        <tr>
-          <td class="td">10003</td>
-          <td>Emma</td>
-        </tr>
-        -->
-      </table>
+    <!-- Tabela com registros de experiências -->
 
-    <section id="lista-registros">
-
-
-
-    <br><br><br><br>
-
-
-    </section>
-
-
-
-    <!-- Tabela com items existentes -->
-
-    <!--
     <section class="items">
-        <table id="myTable">
-            <tr>
-                <th>Título</th>
-                <th>Descrição</th>
-                <th>Data do Registro</th>
-                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+        <table id="tabela-experiencias">
+            
+            <tr class="firstrow-experiencia">
+            <th>Título da Experiência</th>
+            <th>Data da Experiência</th>
+            <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
             </tr>
         </table>
     </section>
-
-    -->
 
     <script src="scripts.js"></script>
 </body>

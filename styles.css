@@ -26,8 +26,8 @@ header {
 }
 
 .banner {
-    height: 100px;
-    overflow: hidden;
+    height: 300px;
+    overflow: visible;
 }
 
 .banner img {
@@ -66,22 +66,6 @@ header {
 }
 */
 
-#newQuantity {
-    margin: 0;
-    border: 1px solid rgb(35, 32, 24);
-    width: 8%;
-    padding: 10px;
-    font-size: 16px;
-}
-
-#newPrice {
-    margin: 0;
-    border: 1px solid rgb(35, 32, 24);
-    width: 5%;
-    padding: 10px;
-    font-size: 16px;
-}
-
 
 .addBtn {
     padding: 9px 10px;
@@ -107,13 +91,10 @@ header {
     cursor: pointer;
 }
 
-
-
-
 .labelNewRegistro{
     width: 100px; 
     display: inline-block;
-    text-align:left;
+    text-align: left;
     vertical-align: top;
 }
 
@@ -123,6 +104,7 @@ header {
     display: flex;
     justify-content: center;
 }
+
 
 .close:hover {
     color: #f44336;
