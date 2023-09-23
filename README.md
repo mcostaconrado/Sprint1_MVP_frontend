@@ -7,7 +7,6 @@ O objetivo do projeto é por em prática o que foi aprendido na Sprint 1 do curs
 
 ## Como executar 
 
-Para que a página manipule dados e tenha integração com o backend, é necessário executar as instruções presentes no README do projeto [MVP_Sprint1_backend]()
-[http://localhost:5000/#/](https://github.com/mcostaconrado/Sprint1_MVP_backend/blob/work-branch/README.md)
+Para que a página manipule dados e tenha integração com o backend, é necessário executar as instruções presentes no README do projeto [MVP_Sprint1_backend](https://github.com/mcostaconrado/Sprint1_MVP_backend/blob/main/README.md)
 
 Para acessar a página, basta seguir as instruções do
